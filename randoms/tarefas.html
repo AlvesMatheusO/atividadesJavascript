@@ -1,0 +1,26 @@
+Escrever um programa que leia um número inteiro qualquer, calcule e apresente 
+os divisores exatos desse número.
+<hr><br>
+<meta charset = "UTF-8">
+<script>
+var num = parseInt(prompt("Informe um número:"));
+var cont = 1;
+var soma = 0;
+console.log("Divisores exatos de "+num+": ");
+while (cont <= num){
+	if (num % cont === 0){
+		console.log(cont);
+		soma = soma + cont;
+	}
+	cont = cont + 1;
+}
+console.log("Soma dos divisores exatos: "+soma);
+console.log("");
+console.log("Divisores exatos de "+num+": ");
+for (cont = 1; cont <= num; cont = cont + 1){
+	if (num % cont === 0){
+		console.log(cont);
+	}
+}
+</script>
+Faça um programa que leia um número inteiro e informe se ele é ou não primo.

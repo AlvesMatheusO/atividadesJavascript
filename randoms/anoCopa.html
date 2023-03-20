@@ -1,0 +1,22 @@
+<script>
+
+    var print = function(frase) {
+
+        document.write(frase + "</br>");
+    }
+
+    var anoCopa = prompt("Diga o ano inicial da copa?");
+     anoCopa = parseInt(anoCopa);
+
+    var anoLimite = prompt("Qual seu ano limite?");
+    anoLimite = parseInt(anoLimite);
+
+    while (anoCopa <= anoLimite) {
+      print(anoCopa + " tem copa!");
+        anoCopa += 4;
+        print(anoCopa + " = Este é o valor apos a soma!");
+
+    }
+
+    print("Ufa, esses foram os anos ate " + anoLimite)
+</script>

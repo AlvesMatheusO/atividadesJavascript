@@ -1,0 +1,14 @@
+<script>
+var prompt = function(texto) { return lines.shift(); };
+var array = [];
+
+
+var insert = Number(prompt(""))
+
+for (var i = 0 ; i < 10; i++) {
+    array[i] = insert;
+    
+    console.log("N[" + i + "] = " + array[i]);
+    insert = insert * 2;
+} 
+</script>

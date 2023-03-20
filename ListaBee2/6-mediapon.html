@@ -1,0 +1,22 @@
+<script>
+var prompt = function(texto) {return lines.shift();};
+var vezes = parseInt(prompt(" "));
+
+var mp = 0;
+
+for (i = 1; i <= vezes; i++) {
+
+    var v1 = parseFloat(prompt("valor 1"));
+    var v2 = parseFloat(prompt("valor 2"));
+    var v3 = parseFloat(prompt("valor 3"));
+
+    mp = (v1 * 2 + v2 * 3 + v3 * 5)/ 10;
+
+  
+
+    console.log(mp.toFixed(1));
+
+
+}
+
+</script>

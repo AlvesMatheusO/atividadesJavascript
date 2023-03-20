@@ -1,0 +1,21 @@
+<script>
+//var prompt = function(texto) {return lines.shift();};
+var cont = 0;
+var somador = 0;
+
+for (var i = 1; i <= 6; i++) { 
+    var val = parseFloat(prompt("valor " + i));
+
+    if (val > 0) {
+        cont++;
+        somador += val;
+    }
+
+    
+}
+
+var media = (somador / cont);
+
+console.log(cont + " valores positivos");
+console.log(media.toFixed(1));
+</script>

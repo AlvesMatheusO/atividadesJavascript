@@ -1,0 +1,21 @@
+<script>
+var insertcasos = parseInt(prompt(""));
+
+var t1 = 0;
+var t2 = 1;
+
+var vetor = [0,1];
+
+for (var i = 0; i < insertcasos; i++) {
+    var num = Number(prompt(""));
+    for (var j = 0; j < num; j++) {
+        var t3 = t1 + t2;
+        t1  = t2;
+        t2 = t3;
+        vetor.push(t3);
+    }
+    console.log("Fib(" + num + ") = " + vetor[num]);
+
+}
+
+</script>

@@ -1,0 +1,19 @@
+<script>
+var num = parseInt(prompt("Insira um numero e confira se e primo!"));
+var cont = 1;
+var soma = 0;
+
+while (cont <= num){
+	if (num % cont === 0){
+	console.log(soma)
+		soma++;
+	}
+	cont++;
+}
+
+if (soma == 2) {
+    document.write("Numero primo")
+} else {
+    document.write("Numero nn primo")
+}
+</script>

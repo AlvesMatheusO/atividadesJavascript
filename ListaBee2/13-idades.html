@@ -1,0 +1,23 @@
+<script>
+var prompt = function(texto) {return lines.shift();};
+
+var idade = parseInt(prompt(" "));
+var soma = idade;
+var i = 1;
+
+while (idade >= 0) {
+    idade = parseInt(prompt(" "));
+
+    if (idade >= 0) {
+        soma += idade;
+        i++
+    }else {
+        break;
+    }
+    
+}
+
+var media = (soma / i);
+
+console.log(media.toFixed(2));
+</script>

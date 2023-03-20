@@ -1,0 +1,21 @@
+<script>
+    var prompt = function(texto) {return lines.shift();};
+    var texto = prompt("Digite 3 numeros:");
+
+    var [a ,b , c] = texto.split(" "); 
+
+    a = parseFloat(a);
+    b =parseFloat(b);
+    c = parseFloat(c);
+
+    if  (Math.abs(b - c) < a && a < (b + c) ) {
+
+        var triangulo = a + b + c;
+        console.log("Perimetro = " + triangulo.toFixed(1));
+
+    } else {
+        var trapezio = ((a + b) * c) / 2;
+        console.log("Area = " + trapezio.toFixed(1));
+    }
+
+</script>

@@ -1,0 +1,20 @@
+<script>
+var prompt = function(texto) {return lines.shift();};
+var num = parseInt(prompt("Quantidade"));
+
+var contI = 0;
+var contO = 0;
+
+for (var i = 0; i < num; i++) {
+    var x = parseInt(prompt("Valores"));
+
+    if (x >= 10 && x <= 20) {
+        contI++; 
+    } else {
+        contO++
+    }
+}
+
+console.log(contI + " in");
+console.log(contO + " out");
+</script>

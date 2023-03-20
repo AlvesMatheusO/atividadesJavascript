@@ -1,0 +1,16 @@
+<script>
+var texto = prompt("Digite 2 numeros:");
+var [a ,b ] = texto.split(" "); 
+
+a = parseInt(a)
+b = parseInt(b)
+
+
+var testnum = (a > b) ? a % b : b % a;
+
+if (testnum === 0) {
+    console.log("Sao Multiplos");
+} else {
+    console.log("Nao sao Multiplos");
+}
+</script>

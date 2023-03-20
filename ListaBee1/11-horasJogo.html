@@ -1,0 +1,17 @@
+<script>
+var texto = prompt("Digite a hora Inicial e Final de um jogo");
+
+var [hInicio, hFinal] = texto.split(" "); 
+
+hInicio = parseInt(hInicio); 
+hFinal = parseInt(hFinal);
+
+if (hFinal <= hInicio) {
+    hFinal = hFinal + 24; 
+    quantH = parseInt((hFinal - hInicio));
+    console.log("O JOGO DUROU " + quantH + " HORA(S)") ;
+} else {
+    console.log("O JOGO DUROU " + (hFinal - hInicio) + " HORA(S)") ;
+}
+
+</script>

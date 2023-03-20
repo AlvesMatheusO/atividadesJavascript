@@ -1,0 +1,42 @@
+<script>
+   // var prompt = function(texto) {return lines.shift();};
+    var texto = prompt("Digite 3 numeros:");
+
+    var [a ,b , c] = texto.split(" "); 
+
+    a = parseInt (a);
+    b = parseInt (b);
+    c = parseInt (c);
+
+
+
+    var maior1 = Math.max(a,b,c);
+
+
+    if (maior1 == a ) {
+            var maior2 = Math.max(b,c);
+            var maior3 = Math.min(b,c);
+
+    }
+
+        if (maior1 == b) {  
+            var maior2 = Math.max (a,c);
+            var maior3 = Math.min (a,c);
+        }
+
+        if (maior1 == c) { 
+            var maior2 = Math.max(b,a);
+            var maior3 = Math.min(b,a);
+
+        }
+
+
+    console.log(maior3);
+    console.log(maior2);
+    console.log(maior1);
+    console.log("");
+    console.log(a)
+    console.log(b);
+    console.log(c);
+
+</script>

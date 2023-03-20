@@ -1,0 +1,23 @@
+<script>
+
+while(true) {
+    var [x,y] = prompt().split(" ").map(Number);;
+
+    if (x > 0 && y > 0) {
+        console.log("primeiro");
+    }
+    if (x < 0 && y > 0) {
+        console.log("segundo");
+    }
+    if (x < 0 && y < 0) {
+        console.log("terceiro");
+    }
+    if (x > 0 && y < 0) {
+        console.log("quarto");
+    }
+    if (x === 0 || y === 0) {
+        break;
+    }
+}
+
+</script>

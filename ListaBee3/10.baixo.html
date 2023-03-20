@@ -1,0 +1,25 @@
+<script>
+var op = prompt("");
+var matriz = [];
+var soma = 0;
+var cont = 0;
+
+for (var i = 0; i < 12; i++) { 
+    matriz[i] = [];
+
+    for (var j = 0; j < 12; j++) {
+        matriz[i][j] = parseFloat(prompt(""));
+
+        if ((i + j) > 11 ) {
+            soma += matriz[i][j];
+            cont++
+        }
+    }
+}
+
+if (op == "S") {
+    console.log(soma.toFixed(1));
+} else {
+    console.log((soma/cont).toFixed(1));
+}
+</script>

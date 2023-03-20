@@ -1,0 +1,52 @@
+<script>
+var texto = prompt("Digite os lados ABC de um triangulo:");
+
+var [a ,b , c] = texto.split(" "); 
+
+a = parseFloat(a);
+b = parseFloat(b);
+c = parseFloat(c);
+
+var maiorL = Math.max( a, b, c);
+var maiorL2 ;
+var maiorL3 ;
+
+if (maiorL == a) {      
+    maiorL2 = Math.max(b, c);
+    maiorL3 = Math.min(b, c);
+} 
+if (maiorL == b) {
+    maiorL2 = Math.max(a, c);
+    maiorL3 = Math.min(a, c);
+}
+if (maiorL == c) {
+    maiorL2 = Math.max(b, a);
+    maiorL3 = Math.min(b, a);
+}
+
+if (maiorL >= ( maiorL2 + maiorL3 )) {
+    console.log("NAO FORMA TRIANGULO");
+} else {
+
+    if ( Math.pow(maiorL, 2) == Math.pow(maiorL2, 2) + Math.pow(maiorL3, 2) ) {
+        console.log("TRIANGULO RETANGULO");
+    } 
+    else if (Math.pow(maiorL, 2) > Math.pow(maiorL2, 2) + Math.pow(maiorL3, 2)) {
+        console.log("TRIANGULO OBTUSANGULO");
+    }
+
+    else if (Math.pow(maiorL, 2) < Math.pow(maiorL2, 2) + Math.pow(maiorL3, 2)) {
+        console.log("TRIANGULO ACUTANGULO");
+    }
+
+}
+
+    if (a == b && b == c) {
+        console.log("TRIANGULO EQUILATERO");
+    } else if (a == b || b == c || a == c) {
+        console.log("TRIANGULO ISOSCELES");
+
+    }
+
+
+</script>

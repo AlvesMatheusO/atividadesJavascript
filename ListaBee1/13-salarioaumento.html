@@ -1,0 +1,45 @@
+<script>
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) {return lines.shift();};
+
+var salario = parseFloat(prompt ("Digite seu salario"));
+
+var aumento;
+var i;
+var salarioAtual;
+
+if (salario >= 0 && salario <= 400) {
+    aumento = 0.15;
+    i = salario * aumento;
+    salarioAtual = salario + i;
+}
+
+if (salario >=  400.01 && salario <= 800) {
+    aumento = 0.12;
+ i = salario * aumento;    
+ salarioAtual = salario + i;
+}
+
+if (salario >= 800.01 && salario <= 1200) {
+    aumento = 0.10;
+ i = salario * aumento;
+ salarioAtual = salario + i;
+}
+
+if (salario >= 1200.01 && salario <= 2000) {
+    aumento = 0.07;
+ i = salario * aumento;    
+ salarioAtual = salario + i;
+}
+
+if (salario > 2000) {
+    aumento = 0.04;
+ i = salario * aumento;
+ salarioAtual = salario + i;
+}
+
+console.log("Novo salario: " + (salarioAtual).toFixed(2));
+console.log("Reajuste ganho: " + i.toFixed(2));
+console.log("Em percentual: " + Math.round(aumento*100)+" %");
+</script>

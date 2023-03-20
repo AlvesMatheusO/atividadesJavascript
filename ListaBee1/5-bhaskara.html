@@ -1,0 +1,21 @@
+<script>
+
+
+var [A,B,C] = prompt("Digite de A à C:").split(" ");
+
+A = parseFloat(A);
+B = parseFloat(B);
+C = parseFloat(C);
+
+var delta = Math.pow(B,2) - 4*A*C;
+
+if (delta < 0 || A === 0) {
+    console.log("Impossivel calcular");
+} else {
+    var x1 = (-B + (Math.pow(delta, 1/2))) / (2*A);
+    var x2 = (-B - (Math.pow(delta, 1/2))) / (2*A);
+
+    console.log("R1 = " + x1.toFixed(5));
+    console.log("R2 = " + x2.toFixed(5));
+}
+</script>

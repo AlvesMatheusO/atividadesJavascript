@@ -1,0 +1,24 @@
+<script>
+    var texto = prompt("Digite a hora e minuto Inicial, e hora, minuto Final de um jogo");
+    
+    var [hInicio, mInicio, hFinal, mFinal] = texto.split(" "); 
+    
+    hInicio = parseInt(hInicio);
+    mInicio = parseInt(mInicio); 
+    hFinal = parseInt(hFinal);
+    mFinal = parseInt(mFinal);
+    
+
+var mintotal = mFinal - mInicio;
+var hTotal = (hFinal - hInicio) * 60;
+var  tempoTotal = hTotal + mintotal;
+
+if (tempoTotal <= 0) {
+    tempoTotal += 24 * 60;
+
+}  
+var h = parseInt(tempoTotal/60);
+var m = tempoTotal%60;
+
+console.log("O JOGO DUROU " + h + " HORA(S) E " + m + " MINUTO(S)");
+    </script> 

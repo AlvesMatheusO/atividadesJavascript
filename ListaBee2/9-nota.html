@@ -1,0 +1,18 @@
+<script>
+var i = 1;
+var soma = 0;
+
+while (i <= 2) {
+    var nota = parseFloat(prompt(""));
+
+    if (nota < 0 || nota > 10 ) {
+        console.log ("nota invalida")
+    } else {
+        soma += nota;
+        i++;
+    }
+}
+
+var media = soma/2;
+console.log("media = " + media.toFixed(2));
+</script>
